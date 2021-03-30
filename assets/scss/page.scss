@@ -3,10 +3,28 @@
     padding: 0;
 }
 
+$grass: #70AE4B;
+$sky: #00FFFF;
+
+$ground-height: 15vh;
+$main-view-height: 100vh - $ground-height;
+
 * {
     box-sizing: border-box;
 }
 
 body {
     @extend %null-margin;
+}
+
+.main-view {
+    width: 100vw;
+    height: $main-view-height;
+    background-color: $sky;
+}
+
+.ground {
+    width: 100vw;
+    height: $ground-height;
+    background-color: $grass;
 }
