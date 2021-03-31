@@ -21,6 +21,9 @@ body {
     width: 100vw;
     height: $main-view-height;
     background-color: $sky;
+    display: grid;
+    grid-template-columns: 140px 310px 300px 200px 130px;
+    grid-template-rows: 130px 300px auto;
 }
 
 .ground {
