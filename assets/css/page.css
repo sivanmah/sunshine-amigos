@@ -12,6 +12,12 @@ body {
   width: 100vw;
   height: 85vh;
   background-color: #00FFFF;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 140px 310px 300px 200px 130px;
+      grid-template-columns: 140px 310px 300px 200px 130px;
+  -ms-grid-rows: 130px 300px auto;
+      grid-template-rows: 130px 300px auto;
 }
 
 .ground {
