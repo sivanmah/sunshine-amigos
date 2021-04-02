@@ -16,8 +16,11 @@
 }
 .verse2 {
     display: none;
-    @extend %verse-position;
-    @extend %verse-styles;
+}
+
+.verse p {
+    margin: 0;
+    padding: 0;
 }
 
 .tree {

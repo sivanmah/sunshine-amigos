@@ -1,11 +1,11 @@
-.verse, .verse2 {
+.verse {
   color: white;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 30px;
   text-shadow: 2px 2px 6px black;
 }
 
-.verse, .verse2 {
+.verse {
   -ms-grid-column: 2;
       grid-column-start: 2;
   -ms-grid-row: 2;
@@ -14,6 +14,11 @@
 
 .verse2 {
   display: none;
+}
+
+.verse p {
+  margin: 0;
+  padding: 0;
 }
 
 .tree {
