@@ -1,0 +1,15 @@
+/*
+   NOTICE: Remember to move everything from _rules.scss to whatever file uses it, when deleting _rules.scss
+           Only keep _rules.scss if SEVERAL files need them.
+*/
+
+%null-margin {
+    margin: 0;
+    padding: 0;
+}
+
+$grass: #70AE4B;
+$sky: #00FFFF;
+
+$ground-height: 15vh;
+$main-view-height: 100vh - $ground-height;

@@ -1,13 +1,4 @@
-%null-margin {
-    margin: 0;
-    padding: 0;
-}
-
-$grass: #70AE4B;
-$sky: #00FFFF;
-
-$ground-height: 15vh;
-$main-view-height: 100vh - $ground-height;
+@import "_rules.scss";
 
 * {
     box-sizing: border-box;
@@ -18,12 +9,25 @@ body {
 }
 
 .main-view {
+    display: flex;
     width: 100vw;
     height: $main-view-height;
     background-color: $sky;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.main-view-grid {
     display: grid;
-    grid-template-columns: 140px 310px 300px 200px 130px;
-    grid-template-rows: 130px 300px auto;
+    width: 90%;
+    height: 100%;
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: end;
+
+    position: relative;
 }
 
 .ground {
