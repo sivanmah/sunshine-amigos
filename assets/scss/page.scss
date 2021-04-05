@@ -25,7 +25,9 @@ body {
 
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    align-items: end;
+    align-items: center;
+    
+    // Is it okay if we align the verses in the center? I feel it looks better that way
 
     position: relative;
 }
