@@ -1,0 +1,39 @@
+@import "_rules.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @extend %null-margin;
+}
+
+.main-view {
+    display: flex;
+    width: 100vw;
+    height: $main-view-height;
+    background-color: $sky;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.main-view-grid {
+    display: grid;
+    width: 90%;
+    height: 100%;
+
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    
+    // Is it okay if we align the verses in the center? I feel it looks better that way
+
+    position: relative;
+}
+
+.ground {
+    width: 100vw;
+    height: $ground-height;
+    background-color: $grass;
+}
