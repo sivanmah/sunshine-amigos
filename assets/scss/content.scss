@@ -55,6 +55,6 @@
     so we can modify each verse independently.
 */
 
-#verse2 { /* verse3, verse4, verse5 and so on ... */
+#verse2, #verse3, #verse4, #verse5 {
     display: none;
 }
