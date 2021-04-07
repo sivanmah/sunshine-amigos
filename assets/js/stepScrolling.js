@@ -1,7 +1,7 @@
 function ApplyFrame(frameID)
 {
     disableScroll(); // Disable scroll while animation is on-going.
-    var frameDuration;
+    var frameDuration = 1000;
 
     switch(frameID) {
         case 1:
