@@ -1,7 +1,19 @@
 function ApplyFrame(frameID)
 {
     disableScroll(); // Disable scroll while animation is on-going.
-    setTimeout(() => {enableScroll();}, 2500); // Change this per frame, only if needed. 2500 = 2500ms delay
+    var frameDuration;
+
+    switch(frameID) {
+        case 1:
+            frameDuration = 2500; // 2500ms
+            // Perform your animation here
+            break;
+        
+        case 2:
+            frameDuration = 1500; // 1500ms
+            break;
+    }
+    setTimeout(() => {enableScroll();}, frameDuration);
 }
 
 var currFrame = 0;
