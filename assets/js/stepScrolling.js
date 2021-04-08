@@ -31,9 +31,9 @@ $(document).on('mousewheel DOMMouseScroll', function(event) {
 
     var wd = event.originalEvent.wheelDelta || -event.originalEvent.detail;
 
-    var a = document.getElementsByClassName('verse');
+    //var a = document.getElementsByClassName('verse');
     if(wd < 0) {
-        if(i==a.length) return;
+        //if(i==a.length) return;
         i++;
     } else {
         if(i==1) return; // Cap minimum frame to 1
