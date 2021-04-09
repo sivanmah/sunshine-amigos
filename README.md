@@ -38,7 +38,7 @@ that needs a name. Our naming practice will be consistent and we will not mix di
 
 **Creative use of CSS**
 
-Our project mainly involves animations targeted to one element: A tree which will change its appearance according to the lyrics shown on the screen. This tree will be created as an SVG and animated through the use of CSS keyframes **(???)** We shall use our storyboard as a guide and aim to code animations which will have the desired effect on the SVG-element. This may include everything and anything involving CSS animations. In essence, our SVG-tree will transition from one state to another, either by changing structure, color or other attributes (leaves falling, branches shaking etc). 
+Our project mainly involves animations targeted to one element: A tree which will change its appearance according to the lyrics shown on the screen. This tree will be created as an SVG and animated through the use of CSS keyframes. We shall use our storyboard as a guide and aim to code animations which will have the desired effect on the SVG-element. This may include everything and anything involving CSS animations. In essence, our SVG-tree will transition from one state to another, either by changing structure, color or other attributes (leaves falling, branches shaking etc). 
 
 By using CSS Grid/Flexbox we will split the viewport into two parts where the song lyrics will appear on the left and our main target for animations - the tree - will appear on the right to ensure that both elements (text and image) are clearly in view and don't collide with each other.
 
