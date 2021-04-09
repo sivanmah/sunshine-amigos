@@ -5,24 +5,24 @@ function ApplyFrame(frameID)
 
     switch(frameID) {
         case 1:
-            $('.main-view').addClass('frame-nb1');
+            $('body').addClass('frame-nb1');
             break;
         
         case 2:
-            $('.main-view').addClass('frame-nb2');
+            $('body').addClass('frame-nb2');
             break;
 
         case 3:
-            $('.main-view').addClass('frame-nb3');
+            $('body').addClass('frame-nb3');
             break;
 
         case 4:
-            $('.main-view').addClass('frame-nb4');
+            $('body').addClass('frame-nb4');
             break;
         
         case 5:
             frameDuration = 5000;
-            $('.main-view').addClass('frame-nb5');
+            $('body').addClass('frame-nb5');
             break;
     }
     setTimeout(() => {enableScroll();}, frameDuration);
