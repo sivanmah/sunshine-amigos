@@ -59,7 +59,7 @@ function handleTouchStart(evt) {
 };                                                
 
 function handleTouchMove(evt) {
-    if ( ! xDown || ! yDown || delay || !scrollingEnabled) {
+    if ( !xDown || !yDown || delay || !scrollingEnabled) {
         return;
     }
 
