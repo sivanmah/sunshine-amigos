@@ -112,6 +112,10 @@ body.frame-nb5{
 }
 
 body.frame-nb5{
+    .cloud-container {
+        opacity: 1.0;
+    }
+    
     #cloud1, #cloud2, #cloud3, #cloud4, #cloud5 {
         animation-name: fade-in-translate-fade-out;
         animation-duration: 15s;
