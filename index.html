@@ -12,10 +12,12 @@
     <!-- JQUERY -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     
-    <!-- We're linking to the compressed CSS file compiled by the SASS compiler to speed up page loading, and minimize use of bandwith -->
-    <link rel="stylesheet" href="assets/css/page.min.css">
+    <!-- We're linking to the compressed CSS file compiled by the SASS compiler to speed up page loading, and minimize use of bandwith -->    
     <link rel="stylesheet" href="assets/css/content.min.css">
-
+    <link rel="stylesheet" href="assets/css/page.min.css">
+    <link rel="stylesheet" href="assets/css/animations.min.css">
+    <!-- Copy the settings from the settings.json I've provided -->
+  
     <!-- Scripts for scrolling -->
     <script src="assets/js/toggleScrolling.js"></script>
     <script src="assets/js/animations.js"></script>
@@ -24,16 +26,25 @@
 <body>
     <div class="main-view">
         <div class="main-view-grid">
+            <div class="cloud-container">
+                <img src="assets/img/cloud.svg" id="cloud1" alt="White cloud">
+                <img src="assets/img/cloud.svg" id="cloud2" alt="White cloud">
+                <img src="assets/img/cloud.svg" id="cloud3" alt="White cloud">
+                <img src="assets/img/cloud.svg" id="cloud4" alt="White cloud">
+                <img src="assets/img/cloud.svg" id="cloud5" alt="White cloud">
+            </div>
             <div class="verse" id="verse1">
-                <p>I met a child a year ago
+                <p class="first-half-verse1">I met a child a year ago
                 whose eyes would never see.</p>
-                <p>She asked me with a timid smile,
+                
+                <p class="second-half-verse1">She asked me with a timid smile,
                 "What colour is a tree?"</p>
             </div>
             
             <div class="verse" id="verse2">
                 <p>"In summertime a tree is green;
                 In autumn gold and red;</p>
+                
                 <p>In winter they are frosted white
                 when all their leaves are shed."</p>
             </div>
@@ -41,6 +52,7 @@
             <div class="verse" id="verse3">
                 <p>I know the sky is blue," she said.
                 "And silver is the sand;</p>
+                
                 <p>And apples are the brightest red.
                 What colour is a man?"</p>
             </div>
@@ -48,6 +60,7 @@
             <div class="verse" id="verse4">
                 <p>Man is many colours child:
                 Some are yellow, some are brown.</p>
+                
                 <p>And some are black as sightlessness,
                 Some white as eiderdown."</p>
             </div>
@@ -55,13 +68,15 @@
             <div class="verse" id="verse5">
                 <p>She took her crayons from a box
                 And placed them in my glove</p>
+                
                 <p>And said, "By mixing all of these
                 Comes my favourite colour--love."</p>
             </div>
             
             <div id="tree-container">
-                <img src="assets/img/tree_without_leaves.svg" class="tree"/>
-                <img src="assets/img/leaves.svg" class="leaves"/>
+                <img src="assets/img/tree_without_leaves.svg" class="tree" alt="Tree branch"/>
+                <img src="assets/img/leaves.svg" class="leaves" alt="Green leaves"/>
+                <img src="assets/img/fall_leaves.svg" class="fall-leaves" alt="Red and gold leaves">
             </div>
         </div>
     </div>
