@@ -15,6 +15,15 @@ function ApplyFrame(frameID)
         case 3:
             $('.main-view').addClass('frame-nb3');
             break;
+
+        case 4:
+            $('.main-view').addClass('frame-nb4');
+            break;
+        
+        case 5:
+            frameDuration = 5000;
+            $('.main-view').addClass('frame-nb5');
+            break;
     }
     setTimeout(() => {enableScroll();}, frameDuration);
 }
