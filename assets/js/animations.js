@@ -1,16 +1,15 @@
 function ApplyFrame(frameID)
 {
     disableScroll(); // Disable scroll while animation is on-going.
-    var frameDuration = 1000;
+    var frameDuration = 3000;
+    var frameContainer = $('body');
+
+    frameContainer.addClass('frame-nb'+frameID);
+    frameContainer.removeClass('frame-nb'+(frameID+1)); // In case we scroll back
 
     switch(frameID) {
-        case 1:
-            frameDuration = 2500; // 2500ms
-            // Perform your animation here
-            break;
-        
-        case 2:
-            frameDuration = 1500; // 1500ms
+        case 5:
+            frameDuration = 5000;
             break;
     }
     setTimeout(() => {enableScroll();}, frameDuration);
