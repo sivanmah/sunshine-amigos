@@ -1,5 +1,8 @@
 // Remember to include animations.js BEFORE this file in your HTML.
 
+disableScroll(); // Start by disabling scroll
+var initialFrame = 3000; // 3000 ms
+setTimeout(() => {enableScroll();}, initialFrame);
 var currFrame = 0;
 
 var delay = false;

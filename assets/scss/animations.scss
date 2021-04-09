@@ -1,9 +1,9 @@
 // TEXT FADE-IN ANIMATION NO.1 START (FRAME NO.1 IN STORYBOARD)
 
 #tree-container {
-opacity: 0;
+    opacity: 0;
 }
-.second-half-verse1 {
+.second-half-verse1, .first-half-verse1 {
     opacity: 0;
 }
 .cloud-container {
@@ -19,32 +19,36 @@ opacity: 0;
     100% {opacity: 1.0;}
 }
 
-.first-half-verse1 {
-animation-name: fade-in-effect;
-animation-duration: 3s;
-animation-iteration-count: 1;
-animation-timing-function: linear;
-animation-fill-mode: forwards;
+.main-view.frame-nb1{
+    .first-half-verse1 {
+        animation-name: fade-in-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
 }
 
 // TEXT FADE-IN ANIMATION NO.1 END
 
 // FADE-IN ANIMATION NO.2 START (FRAME NO.2 IN STORYBOARD)
 
-.second-half-verse1 {
-    animation-name: fade-in-effect;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-}
+.main-view.frame-nb2{
+    .second-half-verse1 {
+        animation-name: fade-in-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
 
-#tree-container {
-    animation-name: fade-in-effect;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
+    #tree-container {
+        animation-name: fade-in-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
 }
 
 // FADE-IN ANIMATION NO.2 END
@@ -60,12 +64,14 @@ animation-fill-mode: forwards;
     100% {opacity: 0.0;}
 }
 
-.leaves {
-animation-name: fade-out-effect;
-animation-duration: 3s;
-animation-iteration-count: 1;
-animation-timing-function: linear;
-animation-fill-mode: forwards;
+.main-view.frame-nb3{
+    .leaves {
+        animation-name: fade-out-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
 }
 
 // LEAVES CHANGE COLOUR ANIMATION END
@@ -77,12 +83,14 @@ animation-fill-mode: forwards;
     to {background-color: #93E3F6;}
 }
 
-.ground {
-animation-name: color-change;
-animation-duration: 5s;
-animation-iteration-count: 1;
-animation-timing-function: linear;
-animation-fill-mode: forwards;
+.main-view.frame-nb5{
+    .ground {
+        animation-name: color-change;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
 }
 
 // GROUND CHANGE COLOUR ANIMATION END
@@ -103,12 +111,13 @@ animation-fill-mode: forwards;
     100% {transform: translateX(100%); opacity: 0.0;}
 }
 
-
-#cloud1, #cloud2, #cloud3, #cloud4, #cloud5 {
-animation-name: fade-in-translate-fade-out;
-animation-duration: 15s;
-animation-timing-function: linear;
-animation-fill-mode: forwards;
+.main-view.frame-nb5{
+    #cloud1, #cloud2, #cloud3, #cloud4, #cloud5 {
+        animation-name: fade-in-translate-fade-out;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
 }
 
 // CLOUD ANIMATION END
