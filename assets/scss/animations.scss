@@ -125,3 +125,19 @@ body.frame-nb5{
 }
 
 // CLOUD ANIMATION END
+
+// APPLES ANIMATION (FRAME NO.6 IN STORYBOARD) THIS IS JUST A SUGGESTION. MAYBE WE WANT THE APPLES TO FADE IN ONE BY ONE?
+
+.apples {
+    opacity: 0;
+}
+
+.apples {
+animation-name: fade-in-effect;
+animation-duration: 3s;
+animation-iteration-count: 1;
+animation-timing-function: linear;
+animation-fill-mode: forwards;
+}
+
+// APPLES ANIMATION END
