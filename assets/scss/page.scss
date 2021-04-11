@@ -6,6 +6,7 @@
 
 body {
     @extend %null-margin;
+    overflow: hidden;
 }
 
 .main-view {
