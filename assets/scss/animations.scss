@@ -3,9 +3,12 @@
 #tree-container {
     opacity: 0;
 }
-.second-half-verse1, .first-half-verse1, .first-half-verse2, .second-half-verse2, .first-half-verse3, .second-half-verse3, .first-half-verse4, .second-half-verse4, .first-half-verse5, .second-half-verse5 {
+
+// ^= selects anything that begins with the supplied string
+p[class^="first-half-"], p[class^="second-half-"] {
     opacity: 0;
 }
+
 .cloud-container {
     opacity: 0;
 }
