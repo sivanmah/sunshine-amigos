@@ -52,6 +52,11 @@
     z-index: 9;
 }
 
+.apples {
+    z-index: 10;
+    @extend %tree;
+}
+
 #verse2, #verse3, #verse4, #verse5 {
     display: none;
 }

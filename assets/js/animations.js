@@ -1,3 +1,11 @@
+function ForceFrame(frameID)
+{
+    var frameContainer = $('body');
+
+    frameContainer.addClass('frame-nb'+frameID);
+    frameContainer.removeClass('frame-nb'+(frameID+1));
+}
+
 function ApplyFrame(frameID)
 {
     disableScroll(); // Disable scroll while animation is on-going.

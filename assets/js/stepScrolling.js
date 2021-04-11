@@ -20,7 +20,7 @@ function previousFrame() {
     if(i==1) return;
     i--;
     outputCurrentFrame();
-    ApplyFrame(i);
+    ForceFrame(i);
 }
 
 
