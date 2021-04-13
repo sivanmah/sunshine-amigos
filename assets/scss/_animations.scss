@@ -1,0 +1,188 @@
+// TEXT FADE-IN ANIMATION NO.1 START (FRAME NO.1 IN STORYBOARD)
+
+#tree-container {
+    opacity: 0;
+}
+
+// ^= selects anything that begins with the supplied string
+p[class^="first-half-"], p[class^="second-half-"] {
+    opacity: 0;
+}
+
+.cloud-container {
+    opacity: 0;
+}
+
+@keyframes fade-in-effect {
+    0% {opacity: 0.0;}
+    20% {opacity: 0.25;}
+    40% {opacity: 0.45;}
+    60% {opacity: 0.65;}
+    80% {opacity: 0.85;}
+    100% {opacity: 1.0;}
+}
+
+body.frame-nb1{
+    .first-half-verse1 {
+        animation-name: fade-in-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+}
+
+// TEXT FADE-IN ANIMATION NO.1 END
+
+// FADE-IN ANIMATION NO.2 START (FRAME NO.2 IN STORYBOARD)
+
+body.frame-nb2{
+    .second-half-verse1, #tree-container {
+        animation-name: fade-in-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+}
+
+// FADE-IN ANIMATION NO.2 END
+
+// LEAVES CHANGE COLOUR ANIMATION START (FRAME NO.3 IN STORYBOARD)
+
+@keyframes fade-out-effect {
+    0% {opacity: 1.0;}
+    20% {opacity: 0.85;}
+    40% {opacity: 0.65;}
+    60% {opacity: 0.45;}
+    80% {opacity: 0.25;}
+    100% {opacity: 0.0;}
+}
+
+body.frame-nb3{
+    .leaves {
+        animation-name: fade-out-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    #verse1 {
+        display: none;
+    }
+
+    #verse2 {
+        display: block;
+    }
+
+    .first-half-verse2 {
+        animation-name: fade-in-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+}
+
+// LEAVES CHANGE COLOUR ANIMATION END
+
+body.frame-nb4 {
+    .second-half-verse2 {
+        animation-name: fade-in-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    .fall-leaves {
+        animation-name: fade-out-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+}
+
+// GROUND CHANGE COLOUR ANIMATION START (FRAME NO.5 IN STORYBOARD)
+
+@keyframes color-change {
+    from {background-color: #70AE4B;}
+    to {background-color: #93E3F6;}
+}
+
+body.frame-nb5{
+    #verse2 {
+        display: none;
+    }
+
+    #verse3 {
+        display: block;
+    }
+
+    .first-half-verse3 {
+        animation-name: fade-in-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    .ground {
+        animation-name: color-change;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+}
+
+// GROUND CHANGE COLOUR ANIMATION END
+
+@keyframes fade-in-translate-fade-out {
+    0% {opacity: 0.0; transform: translateX(0);}
+    10% {opacity: 0.50; transform: translateX(10%);}
+    20% {opacity: 1.0; transform: translateX(20%);}
+    30% {transform: translateX(30%);}
+    40% {transform: translateX(40%);} 
+    50% {transform: translateX(50%);} 
+    60% {transform: translateX(60%);} 
+    70% {transform: translateX(70%);} 
+    80% {transform: translateX(80%); opacity: 1.0;}
+    90% {transform: translateX(90%); opacity: 0.50;}
+    100% {transform: translateX(100%); opacity: 0.0;}
+}
+
+body.frame-nb5{
+    .cloud-container {
+        opacity: 1.0;
+    }
+    
+    #cloud1, #cloud2, #cloud3, #cloud4, #cloud5 {
+        animation-name: fade-in-translate-fade-out;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+}
+
+// CLOUD ANIMATION END
+
+// APPLES ANIMATION (FRAME NO.6 IN STORYBOARD) THIS IS JUST A SUGGESTION. MAYBE WE WANT THE APPLES TO FADE IN ONE BY ONE?
+
+.apples {
+    opacity: 0;
+}
+
+body.frame-nb6 {
+    .second-half-verse3, .leaves, .apples {
+        animation-name: fade-in-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+}
+
+// APPLES ANIMATION END
