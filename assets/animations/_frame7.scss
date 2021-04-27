@@ -14,7 +14,15 @@ body.body__frame7 {
     animation-fill-mode: forwards;
 }
 
-.man {
+#verse3 {
+    display: none;
+}
+
+#verse4 {
+    display: block;
+}
+
+.man, .first-half-verse4 {
     animation-name: fade-in-effect;
     animation-duration: 3s;
     animation-iteration-count: 1;

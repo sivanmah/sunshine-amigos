@@ -1,0 +1,11 @@
+@import "_keyframes.scss";
+
+body.body__frame8 {
+    .second-half-verse4 {
+    animation-name: fade-in-effect;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    }
+}
