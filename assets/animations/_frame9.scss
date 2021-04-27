@@ -2,18 +2,18 @@
 
 body.body__frame9 {
     
-    #verse4 {
+    #main__verse4 {
         display: none;
     }
     
-    #verse5 {
+    #main__verse5 {
         display: block;
     }
-    .first-half-verse5 {
-    animation-name: fade-in-effect;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
+    .main__verse--first-half-verse5 {
+        animation-name: fade-in-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
     }
 }

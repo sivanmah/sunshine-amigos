@@ -4,8 +4,8 @@
     max-height: 100%;
 }
 
-#tree-container {
-    grid-column-start: 2;
+#main__img {
+    grid-column-start: 3;
     display: flex;
     position: relative;
     width: 100%;
@@ -14,7 +14,7 @@
     align-items: flex-end;
 }
 
-.tree {
+.main__img--tree {
     @extend %tree;
     z-index: 9;
 }

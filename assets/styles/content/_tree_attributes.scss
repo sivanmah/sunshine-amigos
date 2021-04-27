@@ -1,15 +1,16 @@
 @import "_tree.scss";
 
-.leaves {
+.main__img--tree-leaves {
     @extend %tree;
     z-index: 10;
 }
 
-.fall-leaves {
+.main__img--tree-fall-leaves {
+    @extend %tree;
     z-index: 9;
 }
 
-.apples {
+.main__img--tree-apples {
     z-index: 10;
     @extend %tree;
 }

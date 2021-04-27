@@ -1,7 +1,7 @@
 @import "_keyframes.scss";
 
 body.body__frame4 {
-    .second-half-verse2 {
+    .main__verse--second-half-verse2 {
         animation-name: fade-in-effect;
         animation-duration: 3s;
         animation-iteration-count: 1;
@@ -9,7 +9,7 @@ body.body__frame4 {
         animation-fill-mode: forwards;
     }
 
-    .fall-leaves {
+    .main__img--tree-fall-leaves {
         animation-name: fade-out-effect;
         animation-duration: 3s;
         animation-iteration-count: 1;

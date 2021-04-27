@@ -5,23 +5,23 @@
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2.6vw; /* 5.5vh or 2.6vw */
     text-shadow: 2px 2px 6px black;
-    margin: 0 0 30px;
+    margin: 0 0 120px;
     max-width: 42vw;
 }
 
 %verse-position {
-    grid-column-start: 1;
+    grid-column-start: 2;
 }
 
-.verse {
+.main__verse {
     @extend %verse-styles;
     @extend %verse-position;
 }
 
-.verse p {
+.main__verse p {
     @extend %null-margin;
 }
 
-#verse2, #verse3, #verse4, #verse5 {
+#main__verse2, #main__verse3, #main__verse4, #main__verse5 {
     display: none;
 }

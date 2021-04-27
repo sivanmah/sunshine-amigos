@@ -11,24 +11,16 @@ body {
     position: fixed;
 }
 
-.main-view {
-    display: flex;
-    width: 100vw;
-    height: $main-view-height;
-    background-color: $sky;
-
-    align-items: center;
-    justify-content: center;
-}
-
-.main-view-grid {
+.main {
     display: grid;
-    width: 90%;
-    height: 100%;
+    width: 100%;
+    height: $main-view-height;
 
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 4fr 3fr 1fr;
     grid-template-rows: 1fr;
-    align-items: center;
+    align-items: end;
+
+    background-color: $sky;
 
     position: relative;
 }

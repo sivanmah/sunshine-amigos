@@ -2,12 +2,12 @@
 
 // APPLES ANIMATION (FRAME NO.6 IN STORYBOARD) THIS IS JUST A SUGGESTION. MAYBE WE WANT THE APPLES TO FADE IN ONE BY ONE?
 
-.apples {
+.main__img--tree-apples {
     opacity: 0;
 }
 
 body.body__frame6 {
-    .second-half-verse3, .leaves, .apples {
+    .main__verse--second-half-verse3, .main__img--tree-leaves, .main__img--tree-apples {
         animation-name: fade-in-effect;
         animation-duration: 3s;
         animation-iteration-count: 1;
