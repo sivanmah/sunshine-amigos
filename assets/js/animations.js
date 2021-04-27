@@ -1,9 +1,11 @@
+var frameClass = 'body__frame';
+
 function ForceFrame(frameID)
 {
     var frameContainer = $('body');
 
-    frameContainer.addClass('frame-nb'+frameID);
-    frameContainer.removeClass('frame-nb'+(frameID+1));
+    frameContainer.addClass(frameClass+frameID);
+    frameContainer.removeClass(frameClass+(frameID+1));
 }
 
 function ApplyFrame(frameID)
@@ -12,8 +14,8 @@ function ApplyFrame(frameID)
     var frameDuration = 3000;
     var frameContainer = $('body');
 
-    frameContainer.addClass('frame-nb'+frameID);
-    frameContainer.removeClass('frame-nb'+(frameID+1)); // In case we scroll back
+    frameContainer.addClass(frameClass+frameID);
+    frameContainer.removeClass(frameClass+(frameID+1)); // In case we scroll back
 
     switch(frameID) {
         case 5:

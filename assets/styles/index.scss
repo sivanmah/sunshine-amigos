@@ -1,4 +1,4 @@
-@import "_rules.scss";
+@import "rules/_rules.scss";
 
 * {
     box-sizing: border-box;
@@ -41,5 +41,15 @@ body {
 
 /* And then load the rest of the files */
 
-@import "_content.scss";
-@import "_animations.scss";
+@import "content/_clouds.scss";
+@import "content/_tree_attributes.scss";
+@import "content/_tree.scss";
+@import "content/_verse.scss";
+@import "content/_human_silhouette.scss";
+@import "../animations/_frame1.scss";
+@import "../animations/_frame2.scss";
+@import "../animations/_frame3.scss";
+@import "../animations/_frame4.scss";
+@import "../animations/_frame5.scss";
+@import "../animations/_frame6.scss";
+@import "../animations/_frame7.scss";

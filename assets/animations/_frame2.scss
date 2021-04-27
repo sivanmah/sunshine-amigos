@@ -1,0 +1,15 @@
+@import "_keyframes.scss";
+
+// FADE-IN ANIMATION NO.2 START (FRAME NO.2 IN STORYBOARD)
+
+body.body__frame2 {
+    .second-half-verse1, #tree-container {
+        animation-name: fade-in-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+}
+
+// FADE-IN ANIMATION NO.2 END
