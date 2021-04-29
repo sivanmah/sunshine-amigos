@@ -15,6 +15,7 @@
 
 body {
     @extend %null-margin;
+    background-color: black;
     overflow-y: hidden;
     height: 100%;
     position: fixed;

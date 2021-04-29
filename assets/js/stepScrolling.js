@@ -33,6 +33,7 @@ function previousFrame() {
 
 function TestFrame(frameID)
 {
+    $('body').css('opacity','0');
     frameID = parseInt(frameID);
     for (l = 1; l < frameID; l++)
     {
@@ -41,7 +42,8 @@ function TestFrame(frameID)
 
     setFrameCounter(frameID);
     outputCurrentFrame();
-    setTimeout(() => {ApplyFrame(frameID);}, 4000);
+    setTimeout(() => {$('body').css('opacity','1');}, 3500);
+    setTimeout(() => {ApplyFrame(frameID);}, 5000);
 }
 
 // Use const here because these values are not going to change
