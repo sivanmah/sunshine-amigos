@@ -11,7 +11,7 @@ function ForceFrame(frameID)
 function ApplyFrame(frameID)
 {
     disableScroll(); // Disable scroll while animation is on-going.
-    const frameDuration = 3000;
+    var frameDuration = 3000;
     var frameContainer = $('body');
 
     frameContainer.addClass(frameClass+frameID);
