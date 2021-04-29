@@ -1,0 +1,39 @@
+// GROUND CHANGE COLOUR AND CLOUD FLOAT ANIMATION START (FRAME NO.5 IN STORYBOARD)
+
+body.body__frame5 {
+    #main__verse2 {
+        display: none;
+    }
+
+    #main__verse3 {
+        display: block;
+    }
+
+    .main__verse--first-half-verse3 {
+        animation-name: fade-in-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    .ground {
+        animation-name: color-change;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+    .main__clouds {
+        opacity: 1.0;
+    }
+    
+    #main__cloud1, #main__cloud2, #main__cloud3, #main__cloud3, #main__cloud4, #main__cloud5 {
+        animation-name: fade-in-translate-fade-out;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+}
+
+// GROUND CHANGE COLOUR AND CLOUD FLOAT ANIMATION END

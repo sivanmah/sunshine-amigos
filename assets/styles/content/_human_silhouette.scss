@@ -1,0 +1,6 @@
+// Tree is already imported in index.scss
+
+.main__img--man {
+    @extend %tree;
+    top: 8.5em;
+}

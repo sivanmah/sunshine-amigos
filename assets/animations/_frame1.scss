@@ -1,0 +1,26 @@
+// TEXT FADE-IN ANIMATION NO.1 START (FRAME NO.1 IN STORYBOARD)
+
+#main__img {
+    opacity: 0;
+}
+
+// ^= selects anything that begins with the supplied string
+p[class^="main__verse--first-half-"], p[class^="main__verse--second-half-"] {
+    opacity: 0;
+}
+
+.main__clouds {
+    opacity: 0;
+}
+
+body.body__frame1 {
+    .main__verse--first-half-verse1 {
+        animation-name: fade-in-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+}
+
+// TEXT FADE-IN ANIMATION NO.1 END

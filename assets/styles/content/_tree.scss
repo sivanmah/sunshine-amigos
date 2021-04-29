@@ -1,0 +1,38 @@
+%tree {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+}
+#main__img {
+    grid-column-start: 3;
+
+    /*
+        We're flexing this container to keep the tree
+        and all the other elements inside at the bottom.
+
+        They vary in shape and size, so this is the most
+        universal and shortest way to solve it.
+    */
+    display: flex;
+    align-items: flex-end;
+    //
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.main__img--tree-branch {
+    @extend %tree;
+    z-index: 9;
+}
+.main__img--tree-leaves {
+    @extend %tree;
+    z-index: 10;
+}
+.main__img--tree-fall-leaves {
+    @extend %tree;
+    z-index: 9;
+}
+.main__img--tree-apples {
+    z-index: 10;
+    @extend %tree;
+}

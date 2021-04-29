@@ -1,0 +1,61 @@
+/*
+    Make sure you only @import a file ONCE to save overhead.
+    Global variables imported earlier WILL carry on to newer imports.
+
+    All rules have already been imported, so there is no need to
+    @import "_rules" in any other file.
+*/
+
+// Import _rules.scss
+@import "rules/_rules";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @extend %null-margin;
+    background-color: black;
+    overflow-y: hidden;
+    height: 100%;
+    position: fixed;
+}
+
+.main {
+    display: grid;
+    width: 100%;
+    height: $main-view-height;
+
+    grid-template-columns: 1fr 4fr 3fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: end;
+
+    background-color: $colors__sky;
+
+    position: relative;
+}
+
+.ground {
+    width: 100vw;
+    height: $ground-height;
+    background-color: $colors__grass;
+}
+
+/* And then load the rest of the files */
+
+@import "content/_clouds";
+@import "content/_tree";
+@import "content/_human_silhouette";
+@import "content/_verse";
+
+@import "../animations/_keyframes"; // Include it here instead, so we don't include the keyframes once for each frame.
+@import "../animations/_frame1";
+@import "../animations/_frame2";
+@import "../animations/_frame3";
+@import "../animations/_frame4";
+@import "../animations/_frame5";
+@import "../animations/_frame6";
+@import "../animations/_frame7";
+@import "../animations/_frame8";
+@import "../animations/_frame9";
+@import "../animations/_frame10";

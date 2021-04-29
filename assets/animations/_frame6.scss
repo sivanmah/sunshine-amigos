@@ -1,0 +1,25 @@
+// APPLES ANIMATION (FRAME NO.6 IN STORYBOARD) THIS IS JUST A SUGGESTION. MAYBE WE WANT THE APPLES TO FADE IN ONE BY ONE?
+
+.main__img--tree-apples {
+    opacity: 0;
+}
+
+body.body__frame6 {
+    .main__verse--second-half-verse3, .main__img--tree-leaves, .main__img--tree-apples {
+        animation-name: fade-in-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    .ground {
+        animation-name: color-change-ground-frame6;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+}
+
+// APPLES ANIMATION END

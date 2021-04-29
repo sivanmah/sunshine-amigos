@@ -1,0 +1,50 @@
+@keyframes fade-in-effect {
+    0% {opacity: 0.0;}
+    20% {opacity: 0.25;}
+    40% {opacity: 0.45;}
+    60% {opacity: 0.65;}
+    80% {opacity: 0.85;}
+    100% {opacity: 1.0;}
+}
+
+@keyframes fade-out-effect {
+    0% {opacity: 1.0;}
+    20% {opacity: 0.85;}
+    40% {opacity: 0.65;}
+    60% {opacity: 0.45;}
+    80% {opacity: 0.25;}
+    100% {opacity: 0.0;}
+}
+
+@keyframes color-change {
+    from {background-color: $colors__grass;}
+    to {background-color: $colors__silver;}
+}
+
+@keyframes color-change-ground-frame6 {
+    from {background-color: $colors__silver;}
+    to {background-color: $colors__grass;}
+}
+
+@keyframes color-change-frame9 {
+    0% {background-color: $colors__change1;}
+    20% {background-color: $colors__change2;}
+    40% {background-color: $colors__change3;}
+    60% {background-color: $colors__change4;}
+    80% {background-color: $colors__change5;}
+    100% {background-color: $colors__sky;}
+}
+
+@keyframes fade-in-translate-fade-out {
+    0% {opacity: 0.0; transform: translateX(0);}
+    10% {opacity: 0.50; transform: translateX(10%);}
+    20% {opacity: 1.0; transform: translateX(20%);}
+    30% {transform: translateX(30%);}
+    40% {transform: translateX(40%);} 
+    50% {transform: translateX(50%);} 
+    60% {transform: translateX(60%);} 
+    70% {transform: translateX(70%);} 
+    80% {transform: translateX(80%); opacity: 1.0;}
+    90% {transform: translateX(90%); opacity: 0.50;}
+    100% {transform: translateX(100%); opacity: 0.0;}
+}

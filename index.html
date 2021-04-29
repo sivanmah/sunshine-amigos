@@ -13,71 +13,69 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     
     <!-- We're linking to the compressed CSS file compiled by the SASS compiler to speed up page loading, and minimize use of bandwith -->    
-    <link rel="stylesheet" href="assets/css/index.min.css">
-    <!-- Copy the settings from the settings.json I've provided -->
+    <link rel="stylesheet" href="assets/styles/index.min.css">
   
     <!-- Scripts for scrolling -->
     <script src="assets/js/toggleScrolling.js"></script>
     <script src="assets/js/animations.js"></script>
     <script src="assets/js/stepScrolling.js"></script>
 </head>
-<body class="frame-nb1">
-    <div class="main-view">
-        <div class="main-view-grid">
-            <div class="cloud-container">
-                <img src="assets/img/cloud.svg" id="cloud1" alt="White cloud">
-                <img src="assets/img/cloud.svg" id="cloud2" alt="White cloud">
-                <img src="assets/img/cloud.svg" id="cloud3" alt="White cloud">
-                <img src="assets/img/cloud.svg" id="cloud4" alt="White cloud">
-                <img src="assets/img/cloud.svg" id="cloud5" alt="White cloud">
+<body class="body__frame1">
+    <div class="main">
+            <div class="main__clouds">
+                <img src="assets/img/cloud.svg" id="main__cloud1" alt="White cloud">
+                <img src="assets/img/cloud.svg" id="main__cloud2" alt="White cloud">
+                <img src="assets/img/cloud.svg" id="main__cloud3" alt="White cloud">
+                <img src="assets/img/cloud.svg" id="main__cloud4" alt="White cloud">
+                <img src="assets/img/cloud.svg" id="main__cloud5" alt="White cloud">
             </div>
-            <div class="verse" id="verse1">
-                <p class="first-half-verse1">I met a child a year ago
+            <div class="main__verse" id="main__verse1">
+                <p class="main__verse--first-half-verse1">I met a child a year ago
                 whose eyes would never see.</p>
                 
-                <p class="second-half-verse1">She asked me with a timid smile,
+                <p class="main__verse--second-half-verse1">She asked me with a timid smile,
                 "What colour is a tree?"</p>
             </div>
             
-            <div class="verse" id="verse2">
-                <p class="first-half-verse2">"In summertime a tree is green;
+            <div class="main__verse" id="main__verse2">
+                <p class="main__verse--first-half-verse2">"In summertime a tree is green;
                 In autumn gold and red;</p>
                 
-                <p class="second-half-verse2">In winter they are frosted white
+                <p class="main__verse--second-half-verse2">In winter they are frosted white
                 when all their leaves are shed."</p>
             </div>
             
-            <div class="verse" id="verse3">
-                <p class="first-half-verse3">I know the sky is blue," she said.
+            <div class="main__verse" id="main__verse3">
+                <p class="main__verse--first-half-verse3">"I know the sky is blue," she said.
                 "And silver is the sand;</p>
                 
-                <p class="second-half-verse3">And apples are the brightest red.
+                <p class="main__verse--second-half-verse3">And apples are the brightest red.
                 What colour is a man?"</p>
             </div>
             
-            <div class="verse" id="verse4">
-                <p class="first-half-verse4">Man is many colours child:
+            <div class="main__verse" id="main__verse4">
+                <p class="main__verse--first-half-verse4">Man is many colours child:
                 Some are yellow, some are brown.</p>
                 
-                <p class="second-half-verse4">And some are black as sightlessness,
+                <p class="main__verse--second-half-verse4">And some are black as sightlessness,
                 Some white as eiderdown."</p>
             </div>
             
-            <div class="verse" id="verse5">
-                <p class="first-half-verse5">She took her crayons from a box
+            <div class="main__verse" id="main__verse5">
+                <p class="main__verse--first-half-verse5">She took her crayons from a box
                 And placed them in my glove</p>
                 
-                <p class="second-half-verse5">And said, "By mixing all of these
+                <p class="main__verse--second-half-verse5">And said, "By mixing all of these
                 Comes my favourite colour--love."</p>
             </div>
             
-            <div id="tree-container">
-                <img src="assets/img/tree_without_leaves.svg" class="tree" alt="Tree branch"/>
-                <img src="assets/img/leaves.svg" class="leaves" alt="Green leaves"/>
-                <img src="assets/img/fall_leaves.svg" class="fall-leaves" alt="Red and gold leaves">
-                <img src="assets/img/apples_v2.svg" class="apples" alt="Red apples">
+            <div id="main__img">
+                <img src="assets/img/tree_without_leaves.svg" class="main__img--tree-branch" alt="Tree branch"/>
+                <img src="assets/img/leaves.svg" class="main__img--tree-leaves" alt="Green leaves"/>
+                <img src="assets/img/fall_leaves.svg" class="main__img--tree-fall-leaves" alt="Red and gold leaves">
+                <img src="assets/img/apples_v2.svg" class="main__img--tree-apples" alt="Red apples">
+                <img src="assets/img/man.svg" class="main__img--man" alt="Human silhouette">
             </div>
-        </div>
     </div>
     <div class="ground"></div>
 </body>

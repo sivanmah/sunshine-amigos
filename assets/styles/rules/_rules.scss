@@ -1,0 +1,16 @@
+/*
+   NOTICE:  Load all the files inside /rules/ in this file.
+            That way, we only need to @import "_rules.scss"
+            to get all the "rules".
+*/
+
+@import "_colors";
+@import "_fonts";
+
+%null-margin {
+    margin: 0;
+    padding: 0;
+}
+
+$ground-height: 15vh;
+$main-view-height: 100vh - $ground-height;
