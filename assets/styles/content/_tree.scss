@@ -5,11 +5,20 @@
 }
 #main__img {
     grid-column-start: 3;
+
+    /*
+        We're flexing this container to keep the tree
+        and all the other elements inside at the bottom.
+
+        They vary in shape and size, so this is the most
+        universal and shortest way to solve it.
+    */
     display: flex;
-    position: relative;
-    width: 100%;
-    height: 100%;
     align-items: flex-end;
+    //
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 .main__img--tree-branch {
     @extend %tree;
