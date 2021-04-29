@@ -12,6 +12,14 @@ body.body__frame6 {
         animation-timing-function: linear;
         animation-fill-mode: forwards;
     }
+
+    .ground {
+        animation-name: color-change-ground-frame6;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
 }
 
 // APPLES ANIMATION END
