@@ -6,11 +6,30 @@ body.body__frame9 {
     #main__verse5 {
         display: block;
     }
+
+    .main__img--man {
+        animation-name: fade-out-effect;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
     .main__verse--first-half-verse5 {
         animation-name: fade-in-effect;
         animation-duration: 3s;
         animation-iteration-count: 1;
         animation-timing-function: linear;
         animation-fill-mode: forwards;
+    }
+
+    /* I wanted the ground to change color as well, but the transition for .main and .ground didn't go
+    simultaneously. I'll try to take a look at it later, but at least for now, we have an animation for
+    FRAME NO.9 IN STORYBOARD :-) kind of */
+
+    .main {
+        animation-name: color-change-frame9;
+        animation-duration: 7s;
+        animation-direction: alternate;
     }
 }
