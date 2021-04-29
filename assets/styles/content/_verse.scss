@@ -1,10 +1,5 @@
-@import "../rules/_rules.scss";
-
 %verse-styles {
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 2.6vw; /* 5.5vh or 2.6vw */
-    text-shadow: 2px 2px 6px black;
+    @extend %font__haettenschweiler;
     margin: 0 0 120px;
     max-width: 42vw;
 }
@@ -14,7 +9,7 @@
 }
 
 .main__verse {
-    @extend %verse-styles;
+    @extend %verse-styles; // This is only extended once, maybe we should just directly put it in here?
     @extend %verse-position;
 }
 
