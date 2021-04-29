@@ -21,6 +21,20 @@
     to {background-color: $colors__silver;}
 }
 
+@keyframes color-change-ground-frame6 {
+    from {background-color: $colors__silver;}
+    to {background-color: $colors__grass;}
+}
+
+@keyframes color-change-frame9 {
+    0% {background-color: $colors__change1;}
+    20% {background-color: $colors__change2;}
+    40% {background-color: $colors__change3;}
+    60% {background-color: $colors__change4;}
+    80% {background-color: $colors__change5;}
+    100% {background-color: $colors__sky;}
+}
+
 @keyframes fade-in-translate-fade-out {
     0% {opacity: 0.0; transform: translateX(0);}
     10% {opacity: 0.50; transform: translateX(10%);}
