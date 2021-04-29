@@ -17,8 +17,8 @@
 }
 
 @keyframes color-change {
-    from {background-color: #70AE4B;}
-    to {background-color: #93E3F6;}
+    from {background-color: $colors__grass;}
+    to {background-color: $colors__silver;}
 }
 
 @keyframes fade-in-translate-fade-out {
