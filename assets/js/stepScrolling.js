@@ -10,6 +10,10 @@ var i = 1;
 function outputCurrentFrame() {console.log("Current frame: " + i);}
 outputCurrentFrame();
 
+function setFrameCounter(frameID) {
+    i = frameID;
+}
+
 function nextFrame() {
     i++;
     outputCurrentFrame();
@@ -22,6 +26,37 @@ function previousFrame() {
     outputCurrentFrame();
     ForceFrame(i);
 }
+
+/*
+    DEBUGGING/TESTING FUNCTIONS
+*/
+
+function TestFrame(frameID)
+{
+    frameID = parseInt(frameID);
+    for (l = 1; l < frameID; l++)
+    {
+        ForceFrame(l);
+    }
+
+    setFrameCounter(frameID);
+    outputCurrentFrame();
+    setTimeout(() => {ApplyFrame(frameID);}, 4000);
+}
+
+// Use const here because these values are not going to change
+const searchStr = window.location.search;
+const urlParams = new URLSearchParams(searchStr);
+const testframe = urlParams.get('testframe');
+
+$(document).ready(function() {
+    if(testframe){TestFrame(testframe);}
+});
+
+
+/*
+    SCROLLING BENEATH
+*/
 
 
 $(document).on('mousewheel DOMMouseScroll', function(event) {
