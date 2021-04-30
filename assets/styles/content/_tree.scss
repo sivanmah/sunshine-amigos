@@ -37,7 +37,7 @@
     @extend %tree;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1050px) {
     #main__img {
         grid-area: tree;
         top: 1px;
