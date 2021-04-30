@@ -20,3 +20,17 @@
 #main__verse2, #main__verse3, #main__verse4, #main__verse5 {
     display: none;
 }
+
+@media only screen and (max-width: 600px) {
+    %verse-styles {
+        text-align: center;
+        margin: 0 auto;
+        max-width: 100%;
+        font-size: 6vw;
+    }
+
+    %verse-position {
+        grid-area: verse;
+        align-content: center;
+    }
+}
