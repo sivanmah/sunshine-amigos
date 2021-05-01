@@ -1,0 +1,9 @@
+.main__img--mankind {
+    @extend %tree;
+    top: 47%;
+    opacity: 0;
+}
+
+/* It would be nice to make this image bigger in size to correspond with the others, but I'm a noob
+and have quite frankly had enough of this madness, so if anyone else could take a look at this, that'd
+be greeeat */
