@@ -20,10 +20,12 @@ body.body__frame9 {
     }
 
     .main__img--mankind {
-        animation-name: swing-out-bottom-bck;
-        animation-duration: 2s;
+        // animation-name: swing-out-bottom-bck; - Commented this out for now in case we need it back! hehe
+        animation-name: fade-out-effect;
+        animation-duration: 3s; //2s
         animation-iteration-count: 1;
-        animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45);
+        // animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45); - Commented this out for now in case we need it back! hehe
+        animation-timing-function: linear;
         animation-fill-mode: forwards;
     }
 
