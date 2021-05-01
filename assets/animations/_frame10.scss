@@ -9,7 +9,7 @@ body.body__frame10 {
     .main__img--heart {
         animation-name: fade-in-effect, heart-pump;
         animation-duration: 5s;
-        animation-iteration-count: 1;
+        animation-iteration-count: 1, infinite; // CSS animation spec allows for multiple parameters on animation-iteration-count, which corresponds to the order of keyframes
         animation-timing-function: ease-in-out;
         animation-fill-mode: forwards;
     }
