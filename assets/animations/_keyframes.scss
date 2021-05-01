@@ -36,8 +36,8 @@
 }
 
 @keyframes slide-verse-center-frame9 {
-    0% {}
-    100% {margin-bottom: 40%;}
+    0% {height: 25%;} // 25% is just an arbitrary number, as verse doesn't have a height set
+    100% {margin: 0; height: 100%;}
 }
 
 @keyframes fade-in-translate-fade-out {
