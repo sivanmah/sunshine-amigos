@@ -6,4 +6,18 @@ body.body__frame8 {
         animation-timing-function: linear;
         animation-fill-mode: forwards;
     }
+    .main__img--man {
+        animation-name: fade-out-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+    .main__img--mankind {
+        animation-name: fade-in-effect;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
 }
