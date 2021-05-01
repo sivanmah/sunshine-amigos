@@ -7,7 +7,7 @@ body.body__frame9 {
         display: block;
     }
 
-    .main__img--man {
+    .main__img--mankind {
         animation-name: fade-out-effect;
         animation-duration: 2s;
         animation-iteration-count: 1;
@@ -24,8 +24,7 @@ body.body__frame9 {
     }
 
     /* I wanted the ground to change color as well, but the transition for .main and .ground didn't go
-    simultaneously. I'll try to take a look at it later, but at least for now, we have an animation for
-    FRAME NO.9 IN STORYBOARD :-) kind of */
+    simultaneously. This is an alternative approach */
 
     .main {
         animation-name: color-change-frame9;
