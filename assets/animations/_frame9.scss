@@ -8,10 +8,10 @@ body.body__frame9 {
     }
 
     .main__img--mankind {
-        animation-name: fade-out-effect;
+        animation-name: swing-out-bottom-bck;
         animation-duration: 2s;
         animation-iteration-count: 1;
-        animation-timing-function: linear;
+        animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45);
         animation-fill-mode: forwards;
     }
 
@@ -27,8 +27,15 @@ body.body__frame9 {
     simultaneously. This is an alternative approach */
 
     .main {
-        animation-name: color-change-frame9;
+        height: 100vh;
+        animation-name: main-change-frame9;
         animation-duration: 7s;
         animation-direction: alternate;
+    }
+
+    .main__verse {
+        animation-name: slide-verse-center-frame9;
+        animation-duration: 5s;
+        animation-fill-mode: forwards; // Keep size afterwards
     }
 }
