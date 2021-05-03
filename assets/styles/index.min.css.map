@@ -6,7 +6,7 @@
         "rules/_rules.scss",
         "rules/_colors.scss",
         "rules/_fonts.scss",
-        "rules/_mobile-touch.scss",
+        "rules/_mobile.scss",
         "content/_clouds.scss",
         "content/_tree.scss",
         "content/_human_silhouette.scss",

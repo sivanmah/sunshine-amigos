@@ -62,7 +62,7 @@ body {
 @import "../animations/_frame9";
 @import "../animations/_frame10";
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: $mobile__tablet-width) {
     .main {
         grid-template-columns: 1fr 7fr 1fr;
         grid-template-rows: 4fr 5fr ;
