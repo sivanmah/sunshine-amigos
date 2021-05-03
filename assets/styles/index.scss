@@ -47,6 +47,8 @@ body {
 @import "content/_tree";
 @import "content/_human_silhouette";
 @import "content/_verse";
+@import "content/_heart";
+@import "content/_mankind";
 
 @import "../animations/_keyframes"; // Include it here instead, so we don't include the keyframes once for each frame.
 @import "../animations/_frame1";
