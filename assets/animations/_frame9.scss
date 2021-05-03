@@ -4,13 +4,27 @@ body.body__frame9 {
     }
     
     #main__verse5 {
-        display: block;
+        /*
+            I've done EXTENSIVE testing,
+            and found that the only viable SMOOTH
+            and ACCURATE way to slide verse to center
+            is to use flex, center the verses and gradually
+            increase the height of the flexed div.
+
+            This also allows it to ALWAYS hit the center,
+            no matter the screen size.
+        */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .main__img--mankind {
+        // animation-name: swing-out-bottom-bck; - Commented this out for now in case we need it back! hehe
         animation-name: fade-out-effect;
-        animation-duration: 2s;
+        animation-duration: 3s; //2s
         animation-iteration-count: 1;
+        // animation-timing-function: cubic-bezier(0.55, 0, 1, 0.45); - Commented this out for now in case we need it back! hehe
         animation-timing-function: linear;
         animation-fill-mode: forwards;
     }
@@ -23,12 +37,16 @@ body.body__frame9 {
         animation-fill-mode: forwards;
     }
 
-    /* I wanted the ground to change color as well, but the transition for .main and .ground didn't go
-    simultaneously. This is an alternative approach */
-
     .main {
-        animation-name: color-change-frame9;
+        height: 100vh;
+        animation-name: main-change-frame9;
         animation-duration: 7s;
         animation-direction: alternate;
+    }
+
+    .main__verse {
+        animation-name: slide-verse-center-frame9;
+        animation-duration: 5s;
+        animation-fill-mode: forwards; // Keep size afterwards
     }
 }

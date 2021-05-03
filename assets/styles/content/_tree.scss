@@ -12,6 +12,14 @@
 
         They vary in shape and size, so this is the most
         universal and shortest way to solve it.
+
+        UPDATE:
+        As of commit 315a741 we're also using flex to center heart.
+        Having the tree images overlapping means we need a div with
+        a position set to anything but static.
+
+        We could play around with something like transform: translateY(-50%); top: 50%;
+        but it would be clunky at best.
     */
     display: flex;
     align-items: flex-end;
