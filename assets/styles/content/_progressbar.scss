@@ -1,5 +1,8 @@
 .progressbar--shown {opacity: 1 !important;}
 #progressbar {
+    display: flex;
+    flex-direction: column;
+
     background-color: #525252;
     width: 200px;
     height: 50px;
@@ -12,14 +15,17 @@
     overflow: hidden;
     opacity: 0;
 
+    font-size: 1.6rem;
+
     transition: all 1s;
+
+    align-items: center;
+    justify-content: center;
 }
 
 #progressbar p {
     @extend %font__montserrat;
     position: absolute;
-    width: 100%;
-    height: 100%;
     text-align: center;
     z-index: 1;
     color: #fff;
@@ -30,8 +36,19 @@
     height: 100%;
     background-color: #457494;
     opacity: 90%;
+
+    align-self: flex-start;
 }
 
 .progressbar__progress--finished {
     width: 100% !important;
+}
+
+@media only screen and (max-width: $mobile__tablet-width) {
+    #progressbar {
+        width: 70px;
+        height: 30px;
+
+        font-size: 0.8rem;
+    }
 }
