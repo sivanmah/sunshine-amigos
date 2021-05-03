@@ -1,0 +1,14 @@
+* {
+    /* 
+        Prevent accidentally selecting text and images on mobile.
+        Also prevents right clicking (2-finger tapping) on touchpads and so on.
+    */
+
+    // iPhone
+    user-select: none;
+    -webkit-user-select:none;
+    -webkit-touch-callout: none;
+
+    // Rest
+    pointer-events: none;
+}
