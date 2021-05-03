@@ -1,3 +1,17 @@
+/*
+    SENSITIVITY CONFIG:
+*/
+
+const TouchScrollSensitivity = 5;
+
+///////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
 // Remember to include animations.js BEFORE this file in your HTML.
 
 disableScroll(); // Start by disabling scroll
@@ -121,11 +135,13 @@ function handleTouchMove(evt) {
         }                       
     } else {
         if ( yDiff > 0 ) {
-            /* up swipe */ 
-            nextFrame();
+            /* up swipe */
+            if(yDiff > TouchScrollSensitivity)
+                nextFrame();
         } else { 
             /* down swipe */
-            previousFrame();
+            if(yDiff < -TouchScrollSensitivity)
+                previousFrame();
         }                                                                 
     }
 
