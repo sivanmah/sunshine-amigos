@@ -2,7 +2,9 @@
     SENSITIVITY CONFIG:
 */
 
-const TouchScrollSensitivity = 5;
+// I've found that the distance I scroll upwards compared to downwards varies enough to warrant it's own variable
+const TouchScrollUpSensitivity = 5;
+const TouchScrollDownSensitivity = 3; // From my testing, this is the "shorter"/"weaker" one
 
 ///////////////////////////////////////////////////////////////////
 
@@ -136,11 +138,11 @@ function handleTouchMove(evt) {
     } else {
         if ( yDiff > 0 ) {
             /* up swipe */
-            if(yDiff > TouchScrollSensitivity)
+            if(yDiff > TouchScrollUpSensitivity)
                 nextFrame();
         } else { 
             /* down swipe */
-            if(yDiff < -TouchScrollSensitivity)
+            if(yDiff < -TouchScrollDownSensitivity)
                 previousFrame();
         }                                                                 
     }
