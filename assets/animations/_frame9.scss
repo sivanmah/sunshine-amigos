@@ -36,10 +36,9 @@ body.body__frame9 {
     }
 
     .main {
-        height: 100vh;
         animation-name: main-change-frame9;
         animation-duration: 7s;
-        animation-direction: alternate;
+        animation-fill-mode: forwards;
     }
 
     .main__verse {
