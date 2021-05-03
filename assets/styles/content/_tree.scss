@@ -44,3 +44,10 @@
     z-index: 10;
     @extend %tree;
 }
+
+@media only screen and (max-width: 1050px) {
+    #main__img {
+        grid-area: tree;
+        top: 1px;
+    }
+}

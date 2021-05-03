@@ -61,3 +61,14 @@ body {
 @import "../animations/_frame8";
 @import "../animations/_frame9";
 @import "../animations/_frame10";
+
+@media only screen and (max-width: 1050px) {
+    .main {
+        grid-template-columns: 1fr 7fr 1fr;
+        grid-template-rows: 4fr 5fr ;
+        grid-template-areas: "marginleft verse marginright"
+                            "marginleft tree marginright";
+    }
+    
+    
+}
