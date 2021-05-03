@@ -12,5 +12,11 @@ body.body__frame10 {
         animation-iteration-count: 1, infinite; // CSS animation spec allows for multiple parameters on animation-iteration-count, which corresponds to the order of keyframes
         animation-timing-function: ease-in-out;
         animation-fill-mode: forwards;
-    }    
+    }
+
+    @media only screen and (max-width: 1050px) {
+        .main__img--heart {
+            align-self: flex-start;
+        }
+    }
 }
