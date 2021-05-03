@@ -43,6 +43,8 @@ body {
 
 /* And then load the rest of the files */
 
+@import "content/progressbar";
+
 @import "content/_clouds";
 @import "content/_tree";
 @import "content/_human_silhouette";

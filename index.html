@@ -8,7 +8,11 @@
     <title>Interactive animation: Favorite Color by Joni Mitchell</title>
     <meta name="description" content="An interactive animation based on the popular folk song Favorite Color,
     made by the award winning musician Joni Mitchell">
-  
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+
     <!-- JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     
@@ -19,6 +23,7 @@
     <script src="assets/javascript/toggleScrolling.js"></script>
     <script src="assets/javascript/animations.js"></script>
     <script src="assets/javascript/stepScrolling.js"></script>
+    <script src="assets/javascript/progressbar.js"></script>
 </head>
 <body class="body__frame1">
     <div class="main">
@@ -80,5 +85,10 @@
             </div>
     </div>
     <div class="ground"></div>
+
+    <div id="progressbar">
+        <p>0/0</p>
+        <div id="progressbar__progress"></div>
+    </div>
 </body>
 </html>

@@ -1,18 +1,23 @@
 var frameClass = 'body__frame';
+var frameContainer;
+var frameMax = 10;
 
 function ForceFrame(frameID)
 {
-    var frameContainer = $('body');
-
     frameContainer.addClass(frameClass+frameID);
     frameContainer.removeClass(frameClass+(frameID+1));
+
+    createProgress(0);
+    updateProgressFrames(frameID);
 }
 
 function ApplyFrame(frameID)
 {
+    if(frameID > frameMax)
+        return;
+
     disableScroll(); // Disable scroll while animation is on-going.
     var frameDuration = 3000;
-    var frameContainer = $('body');
 
     frameContainer.addClass(frameClass+frameID);
     frameContainer.removeClass(frameClass+(frameID+1)); // In case we scroll back
@@ -22,5 +27,15 @@ function ApplyFrame(frameID)
             frameDuration = 5000;
             break;
     }
-    setTimeout(() => {enableScroll();}, frameDuration);
+
+    createProgress(frameDuration/1000);
+    updateProgressFrames(frameID);
+
+    setTimeout(() => {
+        enableScroll();
+}, frameDuration);
 }
+
+$(document).ready(function() {
+    frameContainer = $('body');
+});
