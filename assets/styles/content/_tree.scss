@@ -45,7 +45,7 @@
     @extend %tree;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: $mobile__tablet-width) {
     #main__img {
         grid-area: tree;
         top: 1px;

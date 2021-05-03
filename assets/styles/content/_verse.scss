@@ -21,7 +21,7 @@
     display: none;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: $mobile__tablet-width) {
     %verse-styles {
         text-align: center;
         margin: 0 auto;
