@@ -7,7 +7,13 @@ function createProgress(seconds)
     var progBarProgress = $(progressBarProgressID);
     progBarProgress.css('transition','none');
     progBarProgress.removeClass('progressbar__progress--finished');
+
+    /*
+        This is here to reset the element, so the animation can "restart"
+        If you don't believe me, try commenting it:
+    */
     void progBarProgress[0].offsetWidth;
+    /////////////////////////////////////////////////////////////////////
 
     progBarProgress.css({'transition' : 'all '+seconds+'s linear'});
     progBarProgress.addClass('progressbar__progress--finished');
