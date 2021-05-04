@@ -1,6 +1,18 @@
-# advanced-css-project
+# Advanced CSS Project: Animate *Favorite Colour* by Joni Mitchell
 
-## Structure
+## Background
+
+This project came together as a part of our *advanced CSS* course at NTNU in Gjøvik. The goal was to choose an interesting text, poem, song or anything else and use CSS technologies to create fitting animations for the chosen piece. Our choice fell on Joni Mitchell's classic *Favorite Colour* as we thought that this would be a perfect fit because the text seemed really fun to work with and invited us to be creative with our animations. 
+
+## Progress
+
+As a starting point, we agreed upon how we wanted to animate the song and exactly **what** the animations should consist of. We then **storyboarded** how we wanted the different animations to coincide with the *lyrics* of the song. As the lyrics are quite *vivid* and *literal*, we decided to focus on specific **words** throughout the song. Tree, apples, leaves and man are all meaningful words that we focused our animations on and around. 
+
+## Visualization
+
+Our main motive in our design is a **tree** which will be present throughout the entire design. The screen will be *divided* into two sections with lyrics on one side and a big tree on the other. As the viewer *scrolls* through the text, the tree will change its appearance accordingly. We thought this would make for a good visual effect which harmonizes well with the lyrics. Each verse will be divided into **two** parts and the viewer has to scroll down the page to get to the next part. It will take a total of *ten scrolls* to get through the whole song. The animations will go slowly with a lot of *fading* and *smooth* transitions so as to keep in touch with the calm and harmonious theme in Mitchell’s lyrics
+
+## Project structure
 **BEM**
 
 BEM stands for **B**lock **E**lement **M**odifier, and is a methodology that helps with reusing and sharing your code.
